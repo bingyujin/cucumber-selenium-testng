@@ -7,7 +7,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 											features = "src/test/resources/features", 
 											glue = "tests", 
 											monochrome = true,
-											plugin={"json:target/cucumber-report/cucumber.json"})
+											plugin={"junit:target/cucumber-report/cucumber.xml"})
 public class CucumberRunner extends AbstractTestNGCucumberTests{
 
 }
