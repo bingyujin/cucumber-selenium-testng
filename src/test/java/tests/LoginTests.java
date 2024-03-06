@@ -1,10 +1,19 @@
 package tests;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginTests {
+    @Before
+    public void beforeTest() {
+        WebDriver driver;
+        driver = new ChromeDriver();
+        driver.switchTo();
+    }
 
 	// @Given("^User is on the login screen$")
 	// public void userOnLoginScreen() {
