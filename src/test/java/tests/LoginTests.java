@@ -6,10 +6,11 @@ import io.cucumber.java.en.When;
 
 public class LoginTests {
 
-	// @Given("^User is on the login screen$")
-	// public void userOnLoginScreen() {
-	// 	System.out.println("User is On the Login Screen");
-	// }
+	 @Given("^User is on the login screen$")
+	 public void userOnLoginScreen() {
+         throw new RuntimeException("aaa");
+	 //	System.out.println("User is On the Login Screen");
+	 }
 
 	// @When("^User inputs the credentials$")
 	// public void userInputsCredential() {
